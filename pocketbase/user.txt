@@ -1,0 +1,7 @@
+- Adresse Email pour se connecter à Pocketbase :
+
+abdallah.makhoul@univ-fcomte.fr
+
+- Mot de passe de connexion :
+
+2023test1234
