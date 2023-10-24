@@ -1,18 +1,18 @@
 <template>
   <div class="header-container bg-blanc shadow-md p-4 md:flex items-center justify-between">
     <!-- Logo (visible sur les écrans larges) -->
-    <router-link to="/accueil" class="hidden md:block">
+    <router-link to="/" class="hidden md:block">
       <img src="/images/logo.svg" alt="Logo" class="header-logo h-8 w-8" />
     </router-link>
 
     <!-- Logo (visible sur les écrans plus petits) -->
-    <router-link to="/accueil" class="md:hidden">
+    <router-link to="/" class="md:hidden">
       <img @click="toggleMenu" src="/images/logo.svg" alt="Logo" class="header-logo h-8 w-8 cursor-pointer" />
     </router-link>
 
     <!-- Navigation Links (visible sur les écrans larges) -->
     <div class="md:flex space-x-4 hidden">
-      <router-link to="/accueil" class="nav-link text-noir hover:text-noir font-michroma">Accueil</router-link>
+      <router-link to="/" class="nav-link text-noir hover:text-noir font-michroma">Accueil</router-link>
       <router-link to="/catalogue" class="nav-link text-noir hover:text-noir font-michroma">Catalogue</router-link>
       <router-link to="/personnaliser" class="nav-link text-noir hover:text-noir font-michroma">Personnaliser</router-link>
       <router-link to="/nos-agences" class="nav-link text-noir hover:text-noir font-michroma">Nos Agences</router-link>

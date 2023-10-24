@@ -12,7 +12,7 @@
     <div class="bg-noir20 text-left py-4">
       <img src="/images/logo-text.svg" alt="Logo-Text" class="h-32 w-32 ml-5" />
 
-      <div class="flex flex-col ml-10 mt-10 space-y-2 font-inter">
+      <div class="flex flex-col ml-10 mt-10 space-y-2 font-michroma">
         <router-link to="/conditions-generales" class="text-blanc hover:text-bleu">CGV / CGU</router-link>
         <router-link to="/politique-confidentialite" class="text-blanc hover:text-bleu">Politique de Confidentialité</router-link>
         <router-link to="/faq" class="text-blanc hover:text-bleu">Foire aux Questions (FAQ)</router-link>
