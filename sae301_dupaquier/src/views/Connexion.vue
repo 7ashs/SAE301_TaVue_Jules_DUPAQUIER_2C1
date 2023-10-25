@@ -70,8 +70,12 @@ const fullName = ref("");
 const loginMode = ref(true);
 
 onMounted(async () => {
-  pb = new PocketBase('http://127.0.0.1:8090');
-
+  var pocketbase_ip = "";
+if (import.meta.env.MODE === "production")
+  pocketbase_ip = "https://tavue.julesdupaquier.fr:443";
+else pocketbase_ip = "http://127.0.0.1:8090";
+const pb = new PocketBase(pocketbase_ip);
+  
   pb.authStore.onChange(() => {
     currentUser.value = pb.authStore.model
   }, true)
