@@ -22,16 +22,16 @@
       <div class="border-t border-blanc py-2 mt-5 mb-5 ml-10 mr-10"></div>
       <p class="text-blanc font-inter text-center">&copy;2023 TAVUE - TOUS DROITS RÉSERVÉS.</p>
       <div class="flex justify-center space-x-4 pt-4">
-        <a href="/404" class="text-blanc hover:text-bleu">
+        <a href="/" class="text-blanc hover:text-bleu">
           <img src="/images/facebook-icon.svg" alt="Facebook" class="h-6 w-6" />
         </a>
-        <a href="/404" class="text-blanc hover:text-bleu">
+        <a href="/" class="text-blanc hover:text-bleu">
           <img src="/images/twitter-icon.svg" alt="Twitter" class="h-6 w-6" />
         </a>
-        <a href="/404" class="text-blanc hover:text-bleu">
+        <a href="/" class="text-blanc hover:text-bleu">
           <img src="/images/youtube-icon.svg" alt="YouTube" class="h-6 w-6" />
         </a>
-        <a href="/404" class="text-blanc hover:text-bleu">
+        <a href="/" class="text-blanc hover:text-bleu">
           <img src="/images/instagram-icon.svg" alt="Instagram" class="h-6 w-6" />
         </a>
       </div>

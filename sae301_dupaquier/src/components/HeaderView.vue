@@ -23,11 +23,9 @@
     <!-- Overlay (visible sur les écrans plus petits lorsque le menu est ouvert) -->
     <div v-if="isMenuOpen" class="md:hidden fixed top-0 left-0 w-full h-full bg-blanc z-10 flex items-center justify-center p-4 bg-opacity-95 transition-opacity duration-300 ease-in-out" @click="toggleMenu">
       <!-- Croix pour fermer l'overlay -->
-      <button @click="toggleMenu" class="text-noir hover:text-noir absolute top-4 right-4">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
+          <router-link to="/" class="absolute top-2 right-2 text-noir hover:text-bleuclair focus:outline-none" @click="fermerFormulaire">
+            <img src="/images/croix.svg" alt="Fermer" class="h-8 w-8" />
+          </router-link>
       <!-- Navigation Links (centrés et avec un fondu) -->
       <div class="flex flex-col space-y-8 justify-center text-center">
         <router-link to="/accueil" class="nav-link text-noir hover:text-noir font-michroma" style="opacity: 0; animation: fadeIn 0.3s ease-in-out forwards 0.5s">Accueil</router-link>
@@ -39,20 +37,20 @@
       </div>
       <!-- Icônes Account et Cart (centrés et en bas) -->
       <div class="flex justify-center space-x-4 mt-auto">
-        <router-link to="/profil" class="profile-icon">
+        <router-link to="/panier" class="profile-icon">
           <img src="/images/cart.svg" alt="Cart" class="h-8 w-8" />
         </router-link>
-        <router-link to="/profil" class="profile-icon">
+        <router-link to="/connexion" class="profile-icon">
           <img src="/images/account.svg" alt="Profil" class="h-8 w-8" />
         </router-link>
       </div>
     </div>
     <!-- Icône Personnage (visible sur les écrans larges) -->
     <div class="md:flex space-x-8 hidden">
-      <router-link to="/profil" class="profile-icon">
+      <router-link to="/panier" class="profile-icon">
         <img src="/images/cart.svg" alt="Cart" class="h-8 w-8" />
       </router-link>
-      <router-link to="/profil" class="profile-icon">
+      <router-link to="/connexion" class="profile-icon">
         <img src="/images/account.svg" alt="Profil" class="h-8 w-8" />
       </router-link>
     </div>
