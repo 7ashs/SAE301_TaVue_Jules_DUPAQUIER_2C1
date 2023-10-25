@@ -13,4 +13,3 @@ import FooterView from './components/FooterView.vue';
 
     <FooterView/>
 </template>
-

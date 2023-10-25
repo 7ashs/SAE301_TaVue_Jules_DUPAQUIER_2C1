@@ -3,7 +3,6 @@ import Index from '../views/Index.vue';
 import Personnaliser from '../views/Personnaliser.vue';
 import NosAgences from '../views/NosAgences.vue';
 import Connexion from '../views/Connexion.vue';
-import Inscription from '../views/Inscription.vue';
 
 // Import pocketbase
 import PocketBase from 'pocketbase'
@@ -17,7 +16,6 @@ const router = createRouter({
     { path: '/personnaliser',              name: 'Personnaliser',          component: Personnaliser},
     { path: '/nos-agences',                name: 'Nos-Agences',            component: NosAgences},
     { path: '/connexion',                  name: 'Connexion',              component: Connexion},
-    { path: '/inscription',                name: 'Inscription',            component: Inscription},
   ]
 })
 
@@ -25,16 +23,5 @@ const router = createRouter({
 // to : où il veut aller
 // from : d'où il vient 
 // next : s'il peut y aller
-router.beforeEach( (to, from, next) =>{
-  if(to.name == "IndexView"){ // Si page d'accueil demandée, on autorise
-    next()
-  }else{  // Si une autre route est demandée, on vérifie si l'utilisateur est connecté        
-    if(pb.authStore.model != null){ // Utilisateur connecté => OK
-      next()
-    }else{ // Utilisateur non connecté, redirection sur la page d'acceuil
-      router.push({name:"IndexView"})
-    }
-  }
-})
 
 export default router
