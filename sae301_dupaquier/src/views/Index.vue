@@ -14,7 +14,7 @@ import CardView from '../components/CardView.vue';
   </button>
   </router-link>
 </div>
-<h1>Catalogue</h1>
+<h1 class="text-3xl">Catalogue</h1>
 <div class="flex space-x-5 ml-10 items-center">
   <div>
     <CardView />
@@ -38,7 +38,7 @@ import CardView from '../components/CardView.vue';
     </button>
   </router-link>
 </div>
-<h1>Besoin d'informations</h1>
+<h1 class="text-3xl">Besoin d'informations</h1>
 <div style="position: relative;" class="mt-10 mb-10">
   <img src="/images/infos.webp" alt="Index-Info" style="width: 100%; height: auto;">
   <router-link to="'/nos-agences'">
@@ -55,7 +55,7 @@ import CardView from '../components/CardView.vue';
   </button>
   </router-link>
 </div>
-<h1>Vos lunettes personnalisés</h1>
+<h1 class="text-3xl">Vos lunettes personnalisés</h1>
 <h2 class="font-bold">Créez des lunettes qui vous correspondent</h2>
 <img src="/images/lunettes.svg" alt="Lunettes-XL" class="mx-auto my-auto mt-20 mb-20 w-96">
 <div class="flex justify-center mt-10 mb-10">
