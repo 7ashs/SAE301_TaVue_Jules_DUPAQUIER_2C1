@@ -13,7 +13,7 @@
     <!-- Navigation Links (visible sur les écrans larges) -->
     <div class="md:flex space-x-4 hidden">
       <router-link to="/" class="nav-link text-noir hover:text-bleuclair font-michroma">Accueil</router-link>
-      <router-link to="/catalogue" class="nav-link text-noir hover:text-bleuclair font-michroma">Catalogue</router-link>
+      <router-link to="/error404" class="nav-link text-noir hover:text-bleuclair font-michroma">Catalogue</router-link>
       <router-link to="/personnaliser" class="nav-link text-noir hover:text-bleuclair font-michroma">Personnaliser</router-link>
       <router-link to="/nos-agences" class="nav-link text-noir hover:text-bleuclair font-michroma">Nos Agences</router-link>
       <router-link to="/contact" class="nav-link text-noir hover:text-bleuclair font-michroma">Contactez nous</router-link>

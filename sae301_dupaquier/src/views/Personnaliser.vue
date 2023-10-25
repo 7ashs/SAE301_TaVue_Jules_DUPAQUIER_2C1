@@ -1,4 +1,5 @@
 <script setup>
+import CardView from '../components/CardView.vue';
 </script>
 <template>
 <HeaderView />
@@ -21,6 +22,22 @@
       Ajouter au panier
     </button>
   </router-link>
+</div>
+
+<h1 class="text-3xl">Vos récentes créations</h1>
+<div class="flex space-x-5 ml-10 items-center">
+  <div>
+    <CardView />
+  </div>
+  <div>
+    <CardView />
+  </div>  
+  <div>
+    <CardView />
+  </div>
+  <div>
+    <CardView />
+  </div>
 </div>
 
 <div class="article1 mt-10">

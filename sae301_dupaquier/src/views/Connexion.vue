@@ -6,7 +6,7 @@
       <img src="/images/connexion.webp" alt="Connexion" class="blur">
       <div class="absolute inset-0 flex items-center justify-center">
         <!-- Formulaire de connexion -->
-        <form class="bg-blanc p-16 shadow-md relative">
+        <form class="bg-blanc p-4 md:p-16 shadow-md relative">
           <!-- Bouton de fermeture en haut à droite -->
           <router-link to="/" class="absolute top-2 right-2 text-noir hover:text-bleuclair focus:outline-none" @click="fermerFormulaire">
             <img src="/images/croix.svg" alt="Fermer" class="h-8 w-8" />
@@ -40,12 +40,10 @@
           >
             Se connecter
           </button>
-          
           <!-- Texte pour les connexions alternatives -->
           <p class="text-noir text-sm mt-4 text-center">Ou se connecter avec</p>
-          
           <!-- Logos de connexion -->
-          <div class="flex justify-center space-x-2">
+          <div class="flex flex-col md:flex-row justify-center md:space-x-2">
             <router-link to="/" class="flex items-center mt-2">
               <img src="/images/google-icon.svg" alt="Google" class="h-8 w-8 mr-2" />
             </router-link>
@@ -67,6 +65,7 @@
     },
   };
   </script>
+  
   
   
 

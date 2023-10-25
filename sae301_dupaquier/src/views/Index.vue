@@ -4,7 +4,7 @@ import CardView from '../components/CardView.vue';
 <template>
 <div style="position: relative;">
   <img src="/images/index-img.webp" alt="Index-Img" style="width: 100%; height: auto;">
-  <router-link to="'/personnaliser'">
+  <router-link to="'/personnaliser">
     <button style="position: absolute; top: 75%; left: 75%; transform: translate(-50%, -50%); width: 30%; height: 10%; font-size: 1em; text-align: center; padding: 10px;">
     Personnaliser ses futures lunettes
   </button>
@@ -55,7 +55,7 @@ import CardView from '../components/CardView.vue';
 <h2 class="font-bold">Créez des lunettes qui vous correspondent</h2>
 <img src="/images/lunettes.svg" alt="Lunettes-XL" class="mx-auto my-auto mt-20 mb-20 w-96">
 <div class="flex justify-center mt-10 mb-10">
-  <router-link to="/catalogue">
+  <router-link to="/personnaliser">
     <button class="mx-auto">
       Personnaliser mes futures lunettes
     </button>

@@ -3,6 +3,7 @@ import Index from '../views/Index.vue';
 import Personnaliser from '../views/Personnaliser.vue';
 import NosAgences from '../views/NosAgences.vue';
 import Connexion from '../views/Connexion.vue';
+import Inscription from '../views/Inscription.vue';
 
 // Import pocketbase
 import PocketBase from 'pocketbase'
@@ -16,6 +17,7 @@ const router = createRouter({
     { path: '/personnaliser',              name: 'Personnaliser',          component: Personnaliser},
     { path: '/nos-agences',                name: 'Nos-Agences',            component: NosAgences},
     { path: '/connexion',                  name: 'Connexion',              component: Connexion},
+    { path: '/inscription',                name: 'Inscription',            component: Inscription},
   ]
 })
 
