@@ -1,5 +1,5 @@
 <template>
-  <div class="header-container bg-blanc shadow-md p-4 md:flex items-center justify-between">
+  <div class="header-container bg-blanc shadow-md p-4 md:flex items-center justify-between fixed top-0 w-full z-50">
     <!-- Logo (visible sur les écrans larges) -->
     <router-link to="/" class="hidden md:block">
       <img src="/images/logo.svg" alt="Logo" class="header-logo h-8 w-8" />
