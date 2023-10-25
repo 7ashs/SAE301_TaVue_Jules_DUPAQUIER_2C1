@@ -12,11 +12,11 @@
 
     <!-- Navigation Links (visible sur les écrans larges) -->
     <div class="md:flex space-x-4 hidden">
-      <router-link to="/" class="nav-link text-noir hover:text-noir font-michroma">Accueil</router-link>
-      <router-link to="/catalogue" class="nav-link text-noir hover:text-noir font-michroma">Catalogue</router-link>
-      <router-link to="/personnaliser" class="nav-link text-noir hover:text-noir font-michroma">Personnaliser</router-link>
-      <router-link to="/nos-agences" class="nav-link text-noir hover:text-noir font-michroma">Nos Agences</router-link>
-      <router-link to="/contact" class="nav-link text-noir hover:text-noir font-michroma">Contactez nous</router-link>
+      <router-link to="/" class="nav-link text-noir hover:text-bleuclair font-michroma">Accueil</router-link>
+      <router-link to="/catalogue" class="nav-link text-noir hover:text-bleuclair font-michroma">Catalogue</router-link>
+      <router-link to="/personnaliser" class="nav-link text-noir hover:text-bleuclair font-michroma">Personnaliser</router-link>
+      <router-link to="/nos-agences" class="nav-link text-noir hover:text-bleuclair font-michroma">Nos Agences</router-link>
+      <router-link to="/contact" class="nav-link text-noir hover:text-bleuclair font-michroma">Contactez nous</router-link>
       <!-- ... Ajoutez d'autres liens au besoin -->
     </div>
 
@@ -81,4 +81,22 @@ export default {
     opacity: 1;
   }
 }
+
+  /* Styles pour la ligne qui apparaît de gauche à droite sous le lien */
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Largeur initiale de la ligne */
+    height: 2px; /* Hauteur de la ligne */
+    background-color: bleuclair; /* Couleur de la ligne */
+    transition: width 0.3s; /* Animation de largeur */
+  }
+
+  /* Au survol, la ligne s'étire de gauche à droite */
+  .nav-link:hover::before {
+    width: 100%; /* Largeur maximale de la ligne */
+  }
+
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="flex space-x-4">
     <!-- Première carte -->
-    <div class="relative w-64 h-64 bg-bleuclair rounded-lg p-4">
+    <div class="relative w-64 h-64 bg-bleuclair p-4">
         <!-- Image centrée dans le cadre -->
         <img src="/images/lunettes.svg" alt="Lunettes" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-auto">
         <!-- Bandeau bleu en bas -->
