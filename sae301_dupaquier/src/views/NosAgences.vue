@@ -1,11 +1,15 @@
 <script setup>
-import HeaderView from '../components/HeaderView.vue';
-import FooterView from '../components/FooterView.vue';
+import Map from '../components/Map.vue';
 </script>
 <template>
-<HeaderView />
-
-<FooterView/>
+<Map />
+<div class="flex justify-center mt-5 mb-10">
+  <router-link to="/catalogue">
+    <button class="mx-auto">
+      Voir la liste de nos Agences
+    </button>
+  </router-link>
+</div>
 </template>
 
 <style scoped>

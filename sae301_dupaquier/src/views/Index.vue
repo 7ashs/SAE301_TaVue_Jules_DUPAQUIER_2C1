@@ -1,11 +1,7 @@
 <script setup>
-import HeaderView from '../components/HeaderView.vue';
-import FooterView from '../components/FooterView.vue';
 import CardView from '../components/CardView.vue';
 </script>
 <template>
-  <HeaderView />
-
 <div style="position: relative;">
   <img src="/images/index-img.webp" alt="Index-Img" style="width: 100%; height: auto;">
   <router-link to="'/personnaliser'">
@@ -65,7 +61,6 @@ import CardView from '../components/CardView.vue';
     </button>
   </router-link>
 </div>
-<FooterView/>
 </template>
 
 <style scoped>
