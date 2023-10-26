@@ -1,5 +1,6 @@
 <script setup>
 import CardView from '../components/CardView.vue';
+import RecentesCreations from '../components/RecentesCreations.vue';
 </script>
 <template>
 <div style="position: relative;">
@@ -60,6 +61,13 @@ import CardView from '../components/CardView.vue';
       Personnaliser mes futures lunettes
     </button>
   </router-link>
+</div>
+<h1 class="text-3xl">Vos récentes créations</h1>
+<div class="flex space-x-5 ml-10 mb-10 items-center">
+  <div>
+    <RecentesCreations />
+    <div class="text-center mt-5 text-2xl ">59,99€</div> 
+  </div>
 </div>
 </template>
 

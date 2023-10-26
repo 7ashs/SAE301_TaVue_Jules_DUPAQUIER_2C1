@@ -1,8 +1,9 @@
 <script setup>
-import CardView from '../components/CardView.vue';
 import ConfiguratorView from '../components/ConfiguratorView.vue';
+import Configurator2View from '../components/Configurator2View.vue';
 import { ref, onMounted } from 'vue';
   import PocketBase from 'pocketbase'
+import RecentesCreations from '../components/RecentesCreations.vue';
   const pb = new PocketBase("http://193.168.146.180:80");
 
   let colors = ref([]);
@@ -46,20 +47,7 @@ import { ref, onMounted } from 'vue';
 </div>
 
 <h1 class="text-3xl">Vos récentes créations</h1>
-<div class="flex space-x-5 ml-10 items-center">
-  <div>
-    <CardView />
-  </div>
-  <div>
-    <CardView />
-  </div>  
-  <div>
-    <CardView />
-  </div>
-  <div>
-    <CardView />
-  </div>
-</div>
+<RecentesCreations />
 
 <div class="article1 mt-10">
     <div class="flex flex-col lg:flex-row">
