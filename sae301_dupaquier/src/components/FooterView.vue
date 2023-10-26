@@ -34,7 +34,7 @@
         <a href="/" class="text-blanc hover:text-bleu">
           <img src="/images/instagram-icon.svg" alt="Instagram" class="h-6 w-6" />
         </a>
-      </div>
+      </div>+6
     </div>
 </template>
   
